@@ -32,7 +32,7 @@ public class MyBirthday : MonoBehaviour
 				}
 			else
 				{
-					for (int iterateDay=1; iterateDay<=30; iterateDay++)
+					for (int iterateDay=1; iterateDay<=28; iterateDay++)
 						{
 							print ("month "+iterateMonth+" day "+iterateDay);
 						}
