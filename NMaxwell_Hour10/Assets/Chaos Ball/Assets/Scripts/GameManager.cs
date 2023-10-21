@@ -8,7 +8,18 @@ public class GameManager : MonoBehaviour
 	private FirstPersonController fpsController;
 	public GameObject player;
 	public Transform spawnPoint;
-	
+
+	public GameObject blueBall;
+	public GameObject redBall;
+	public GameObject greenBall;
+	public GameObject orangeBall;
+
+	public Transform blueSpawnPoint;
+	public Transform redSpawnPoint;
+	public Transform greenSpawnPoint;
+	public Transform orangeSpawnPoint;
+
+	public Transform cornerPocket;
 
 	// Use this for initialization
 	void Start ()
@@ -38,10 +49,25 @@ public class GameManager : MonoBehaviour
 		elapsedTime = 0;
 		isRunning = true;
 		isFinished = false;
+		blue.isSolved=false;
+		red.isSolved=false;
+		green.isSolved=false;
+		orange.isSolved=false;
+		blue.GetComponent<Light>().enabled = true;
+		red.GetComponent<Light>().enabled = true;
+		green.GetComponent<Light>().enabled = true;
+		orange.GetComponent<Light>().enabled = true;
+
+
+
 
 		// Move the player to the spawn point, and allow it to move.
 		PositionPlayer();
 		fpsController.enabled = true;
+		PositionBlue();
+		PositionRed();
+		PositionGreen();
+		PositionOrange();
 
 	}
 
@@ -57,7 +83,50 @@ public class GameManager : MonoBehaviour
 		player.transform.position = spawnPoint.position;
 		player.transform.rotation = spawnPoint.rotation;
 	}
+	public void PositionBlue()
+	{
+		blueBall.transform.position = blueSpawnPoint.position;
+		blueBall.transform.rotation = blueSpawnPoint.rotation;
+	}
+	public void PositionRed()
+	{
+		redBall.transform.position = redSpawnPoint.position;
+		redBall.transform.rotation = redSpawnPoint.rotation;
+	}
+	public void PositionGreen()
+	{
+		greenBall.transform.position = greenSpawnPoint.position;
+		greenBall.transform.rotation = greenSpawnPoint.rotation;
+	}
+	public void PositionOrange()
+	{
+		orangeBall.transform.position = orangeSpawnPoint.position;
+		orangeBall.transform.rotation = orangeSpawnPoint.rotation;
+	}
+	
 
+	public void PocketBlue()
+	{
+		blueBall.transform.position = cornerPocket.position;
+		blueBall.transform.rotation = cornerPocket.rotation;
+	}
+	public void PocketRed()
+	{
+		redBall.transform.position = cornerPocket.position;
+		redBall.transform.rotation = cornerPocket.rotation;
+	}
+	public void PocketGreen()
+	{
+		greenBall.transform.position = cornerPocket.position;
+		greenBall.transform.rotation = cornerPocket.rotation;
+	}
+	public void PocketOrange()
+	{
+		orangeBall.transform.position = cornerPocket.position;
+		orangeBall.transform.rotation = cornerPocket.rotation;
+	}
+
+	
 	
 
 	void Update ()
