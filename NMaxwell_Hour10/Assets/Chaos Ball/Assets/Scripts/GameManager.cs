@@ -149,7 +149,7 @@ public class GameManager : MonoBehaviour
 
 			if(isFinished)
 			{
-				message = "Click or Press Enter to Play Again";
+				message = "Click or Press Enter twice to Play Again";
 			}
 			else
 			{
