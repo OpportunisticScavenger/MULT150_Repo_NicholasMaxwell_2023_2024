@@ -4,9 +4,10 @@ public class PrefabGenerator : MonoBehaviour
 public GameObject prefab;
 void Start()
 {
-	for (int x=0;x<10;x++)
+	for (int j=0;j<10;j++)
 	{
-		Instantiate(prefab);
+		Vector3 spawnOffset = new Vector3(-5+j, 0, -5);
+		Instantiate(prefab, spawnOffset, transform.rotation);
 	}
 }
 void Update()
