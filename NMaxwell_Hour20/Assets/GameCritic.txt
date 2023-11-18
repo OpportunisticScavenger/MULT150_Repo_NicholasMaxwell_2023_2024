@@ -1,0 +1,43 @@
+
+    Is the game to easy or hard? Give 3 unique reasons why it is easy or hard.
+a.
+the game is technically easy but practically hard.
+theoretically you could go on forever with little to no effort because the controls and concept is so simple.
+b.
+but because of how annoying it is to actually navigate the space you probably won't get far. the controls being simple isn't neccessarily a good thing when they don't work like you feel it should. and because you have very little control over how the controls function, you will over or undershoot the targets you want to hit.
+c.
+and because of the poor depth perception and camera angle you have a hard time actually guaging what option is best for the situation.
+
+    What 3 changes would you do to make it easier or harder?
+a.
+i can't really tell if it can really be called "difficulty" when it's just poor user control. i don't really know how to make it more snappy that wouldn't just be completely re-writing the movement code. maybe the ability to move forward and backwards (within bounds) in order to better dodge some objects coming at you?
+b.
+on the topic of making things more usable, the readability of the objects is garbage. adding better shadows and a trajectory line would help immensly to see if you were on track to hitting the thing you wanted to hit.
+c.
+changing the frequency of spawns is a pretty easy way of changing difficulty, but that's a cop-out answer and i won't have it. giving a grace period of a second or two before the game ends would be a good way of keeping things going. there were times where i was just about to hit a pellet, but it ended too soon for me to get the time increase.
+
+    List three things that would give it a "wow" factor.
+a.
+for starters, some moving objects or textures that aren't just solid colors with a glow. maybe chose a color palette that looks interesting instead of just red lines red boxes and scrolling metal. mix things up, add some variation so the scrolling isn't as obvious. make the box a stick figure guy or something.
+b.
+adding some depth to the obstacles/powerups? like a puddle or something you had to move around, that you couldn't phase through or something, i don't know. the "jump" being a phase certainly is a choice. but i guess its just technical limitations.
+c.
+some graphical effects when you are hurt, slowed, or phasing could better indicate the state of the game, and would look impressive. red screen borders for hurt, warping at the edges for phasing, and when you are about to end the game some indication that you are low on time would add tension.
+
+    What parts of the game are fun? 3 items
+a.
+do i have to answer this? i guess the game technically works, and my first run was kinda good before i realized how annoying the slow and phase were.
+
+actually, i think the first run i did was when i was still de-bugging my code and the slowdown effect was permanent and stacked. it somehow made it more enjoyable to play, at least until i noticed it was going wrong and it just became annoying.
+b.
+it's simple to pick up. even simpler if you don't realize you can phase. good thing too, since that's the best way to win.
+c.
+it's a game that would probably work on mobile devices if it were made for them. that's gotta account for something, being concise and to the point.
+
+    What parts of the game are tedious? 3 items
+a.
+the slowdown effect is annoying to deal with. its just not fun to deal with and slows the game down for no reason.
+b.
+the controls are slippery, and the slowdown effect doesn't really do anything to mitigate that. i feel like it was supposed to simulate being hurt and moving slower? but it doesn't offer any improved mobility to get out of the situaion.
+c.
+the phasing mechanic is hard to control. being phased is both a blessing and a curse; you can dodge obstacles, but you also dodge pellets. and because its a set time you frequently find yourself without any means of grabbing powerups to keep your time going. it basically can end the game for you if you use it at all, and the winning strategy just becomes to not engage with that portion of the game and hope you don't run into any obstacles, because then the slowdown will hit you and stop you from doing anything fun for a few seconds.
